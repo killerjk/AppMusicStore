@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "19408161033",
+    "firebase_url": "https://app-musical-instruments-default-rtdb.firebaseio.com",
+    "project_id": "app-musical-instruments",
+    "storage_bucket": "app-musical-instruments.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19408161033:android:7795a1ba3834d228502bd8",
+        "android_client_info": {
+          "package_name": "com.joas.appmusicstore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJh6D6z7WMgPBxpF-bZAhXI7ABu37-NeU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

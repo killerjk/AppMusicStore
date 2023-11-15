@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:defaultFocusHighlightEnabled="true"
+    tools:context=".tela_principal.fragments.CarrinhoPedidos">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarlayout_pesquisar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/green"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_pesquisar_carrinho_pedidos"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/green"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scrollCarrinho"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ClaBb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewClaBb"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/clarinete_sib"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtClaBb"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/clarineteBb"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btRemoveClaBb"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewClaBb"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewClaBb" />
+
+                <ImageButton
+                    android:id="@+id/btAddClaBb"
+                    style="@style/ButtonProduto"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_add"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageViewClaBb"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewClaBb" />
+
+                <TextView
+                    android:id="@+id/txtQuantidadeClaBb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:text="1"
+                    android:textSize="22dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/btAddClaBb"
+                    app:layout_constraintEnd_toStartOf="@+id/btAddClaBb"
+                    app:layout_constraintTop_toTopOf="@+id/btAddClaBb" />
+
+                <ImageButton
+                    android:id="@+id/btRemoveClaBb"
+                    style="@style/ButtonProduto"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_remove"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtQuantidadeClaBb"
+                    app:layout_constraintEnd_toStartOf="@+id/txtQuantidadeClaBb"
+                    app:layout_constraintTop_toTopOf="@+id/txtQuantidadeClaBb" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ClaEb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewClaEb"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/clarinete_mib"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtClaEb"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/clarineteEb"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btRemoveClaEb"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewClaEb"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewClaEb" />
+
+                <ImageButton
+                    android:id="@+id/btAddClaEb"
+                    style="@style/ButtonProduto"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_add"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageViewClaEb"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewClaEb" />
+
+                <TextView
+                    android:id="@+id/txtQuantidadeClaEb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:text="1"
+                    android:textSize="22dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/btAddClaEb"
+                    app:layout_constraintEnd_toStartOf="@+id/btAddClaEb"
+                    app:layout_constraintTop_toTopOf="@+id/btAddClaEb" />
+
+                <ImageButton
+                    android:id="@+id/btRemoveClaEb"
+                    style="@style/ButtonProduto"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_remove"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtQuantidadeClaEb"
+                    app:layout_constraintEnd_toStartOf="@+id/txtQuantidadeClaEb"
+                    app:layout_constraintTop_toTopOf="@+id/txtQuantidadeClaEb" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/TromBb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewTromBb"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/trompete_sib"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtTromBb"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/trompeteBb"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btRemoveTromBb"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewTromBb"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewTromBb" />
+
+                <ImageButton
+                    android:id="@+id/btAddTromBb"
+                    style="@style/ButtonProduto"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_add"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageViewTromBb"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewTromBb" />
+
+                <TextView
+                    android:id="@+id/txtQuantidadeTromBb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:text="1"
+                    android:textSize="22dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/btAddTromBb"
+                    app:layout_constraintEnd_toStartOf="@+id/btAddTromBb"
+                    app:layout_constraintTop_toTopOf="@+id/btAddTromBb" />
+
+                <ImageButton
+                    android:id="@+id/btRemoveTromBb"
+                    style="@style/ButtonProduto"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_remove"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtQuantidadeTromBb"
+                    app:layout_constraintEnd_toStartOf="@+id/txtQuantidadeTromBb"
+                    app:layout_constraintTop_toTopOf="@+id/txtQuantidadeTromBb" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/TromC"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewTromC"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/trompete_do"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtTrompeteC"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/trompeteC"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btRemoveTromC"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewTromC"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewTromC" />
+
+                <ImageButton
+                    android:id="@+id/btAddTromC"
+                    style="@style/ButtonProduto"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_add"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageViewTromC"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewTromC" />
+
+                <TextView
+                    android:id="@+id/txtQuantidadeTromC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:text="1"
+                    android:textSize="22dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/btAddTromC"
+                    app:layout_constraintEnd_toStartOf="@+id/btAddTromC"
+                    app:layout_constraintTop_toTopOf="@+id/btAddTromC" />
+
+                <ImageButton
+                    android:id="@+id/btRemoveTromC"
+                    style="@style/ButtonProduto"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_remove"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtQuantidadeTromC"
+                    app:layout_constraintEnd_toStartOf="@+id/txtQuantidadeTromC"
+                    app:layout_constraintTop_toTopOf="@+id/txtQuantidadeTromC" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/SaxAlto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewSaxAlto"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/saxalto"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtSaxAlto"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/saxofoneAlto"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btRemoveSaxAlto"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewSaxAlto"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewSaxAlto" />
+
+                <ImageButton
+                    android:id="@+id/btAddSaxAlto"
+                    style="@style/ButtonProduto"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_add"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageViewSaxAlto"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewSaxAlto" />
+
+                <TextView
+                    android:id="@+id/txtQuantidadeSaxAlto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:text="1"
+                    android:textSize="22dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/btAddSaxAlto"
+                    app:layout_constraintEnd_toStartOf="@+id/btAddSaxAlto"
+                    app:layout_constraintTop_toTopOf="@+id/btAddSaxAlto" />
+
+                <ImageButton
+                    android:id="@+id/btRemoveSaxAlto"
+                    style="@style/ButtonProduto"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_remove"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtQuantidadeSaxAlto"
+                    app:layout_constraintEnd_toStartOf="@+id/txtQuantidadeSaxAlto"
+                    app:layout_constraintTop_toTopOf="@+id/txtQuantidadeSaxAlto" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/SaxTenor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewSaxTenor"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/saxtenor"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtSaxTenor"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/saxofoneTenor"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btRemoveSaxTenor"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewSaxTenor"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewSaxTenor" />
+
+                <ImageButton
+                    android:id="@+id/btAddSaxTenor"
+                    style="@style/ButtonProduto"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_add"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageViewSaxTenor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewSaxTenor" />
+
+                <TextView
+                    android:id="@+id/txtQuantidadeSaxTenor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:text="1"
+                    android:textSize="22dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/btAddSaxTenor"
+                    app:layout_constraintEnd_toStartOf="@+id/btAddSaxTenor"
+                    app:layout_constraintTop_toTopOf="@+id/btAddSaxTenor" />
+
+                <ImageButton
+                    android:id="@+id/btRemoveSaxTenor"
+                    style="@style/ButtonProduto"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_remove"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtQuantidadeSaxTenor"
+                    app:layout_constraintEnd_toStartOf="@+id/txtQuantidadeSaxTenor"
+                    app:layout_constraintTop_toTopOf="@+id/txtQuantidadeSaxTenor" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/VioRol"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewVioRol"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/violinopreto"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtVioRol"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/violinoRolim"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btRemoveVioRol"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewVioRol"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewVioRol" />
+
+                <ImageButton
+                    android:id="@+id/btAddVioRol"
+                    style="@style/ButtonProduto"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_add"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageViewVioRol"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewVioRol" />
+
+                <TextView
+                    android:id="@+id/txtQuantidadeVioRol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:text="1"
+                    android:textSize="22dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/btAddVioRol"
+                    app:layout_constraintEnd_toStartOf="@+id/btAddVioRol"
+                    app:layout_constraintTop_toTopOf="@+id/btAddVioRol" />
+
+                <ImageButton
+                    android:id="@+id/btRemoveVioRol"
+                    style="@style/ButtonProduto"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_remove"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtQuantidadeVioRol"
+                    app:layout_constraintEnd_toStartOf="@+id/txtQuantidadeVioRol"
+                    app:layout_constraintTop_toTopOf="@+id/txtQuantidadeVioRol" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/VioLut"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewVioLut"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/violinoluthier"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtVioLut"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/violinoLuthier"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btRemoveVioLut"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewVioLut"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewVioLut" />
+
+                <ImageButton
+                    android:id="@+id/btAddVioLut"
+                    style="@style/ButtonProduto"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_add"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageViewVioLut"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewVioLut" />
+
+                <TextView
+                    android:id="@+id/txtQuantidadeVioLut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:text="1"
+                    android:textSize="22dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/btAddVioLut"
+                    app:layout_constraintEnd_toStartOf="@+id/btAddVioLut"
+                    app:layout_constraintTop_toTopOf="@+id/btAddVioLut" />
+
+                <ImageButton
+                    android:id="@+id/btRemoveVioLut"
+                    style="@style/ButtonProduto"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_remove"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtQuantidadeVioLut"
+                    app:layout_constraintEnd_toStartOf="@+id/txtQuantidadeVioLut"
+                    app:layout_constraintTop_toTopOf="@+id/txtQuantidadeVioLut" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/PiaKaw"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:visibility="gone">
+
+
+                <ImageView
+                    android:id="@+id/imageViewPiaKaw"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/pianodecaldakawai"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtPiaKaw"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pianoKawai"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btRemovePiaKaw"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewPiaKaw"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewPiaKaw" />
+
+                <ImageButton
+                    android:id="@+id/btAddPiaKaw"
+                    style="@style/ButtonProduto"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_add"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageViewPiaKaw"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewPiaKaw" />
+
+                <TextView
+                    android:id="@+id/txtQuantidadePiaKaw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:text="1"
+                    android:textSize="22dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/btAddPiaKaw"
+                    app:layout_constraintEnd_toStartOf="@+id/btAddPiaKaw"
+                    app:layout_constraintTop_toTopOf="@+id/btAddPiaKaw" />
+
+                <ImageButton
+                    android:id="@+id/btRemovePiaKaw"
+                    style="@style/ButtonProduto"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_remove"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtQuantidadePiaKaw"
+                    app:layout_constraintEnd_toStartOf="@+id/txtQuantidadePiaKaw"
+                    app:layout_constraintTop_toTopOf="@+id/txtQuantidadePiaKaw" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/PiaTok"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageViewPiaTok"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/pianodigitaltokai"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtPiaTok"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pianoTokai"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btRemovePiaTok"
+                    app:layout_constraintStart_toEndOf="@+id/imageViewPiaTok"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewPiaTok" />
+
+                <ImageButton
+                    android:id="@+id/btAddPiaTok"
+                    style="@style/ButtonProduto"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_add"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageViewPiaTok"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewPiaTok" />
+
+                <TextView
+                    android:id="@+id/txtQuantidadePiaTok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:text="1"
+                    android:textSize="22dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/btAddPiaTok"
+                    app:layout_constraintEnd_toStartOf="@+id/btAddPiaTok"
+                    app:layout_constraintTop_toTopOf="@+id/btAddPiaTok" />
+
+                <ImageButton
+                    android:id="@+id/btRemovePiaTok"
+                    style="@style/ButtonProduto"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_remove"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtQuantidadePiaTok"
+                    app:layout_constraintEnd_toStartOf="@+id/txtQuantidadePiaTok"
+                    app:layout_constraintTop_toTopOf="@+id/txtQuantidadePiaTok" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/txt_view_valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="20dp"
+        android:text="ValorTotal:"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bt_efetuar_pagamento"
+        app:layout_constraintEnd_toStartOf="@+id/txt_valor_total"
+        app:layout_constraintStart_toStartOf="@+id/bt_efetuar_pagamento" />
+
+    <TextView
+        android:id="@+id/txt_valor_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="20dp"
+        android:text="R$ 0,00"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bt_efetuar_pagamento"
+        app:layout_constraintEnd_toEndOf="@+id/bt_efetuar_pagamento"
+        app:layout_constraintStart_toEndOf="@+id/txt_view_valor" />
+
+    <Button
+        android:id="@+id/bt_efetuar_pagamento"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/green"
+        android:text="Efetuar Pagamento"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_voltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt_voltar"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/green"
+        android:text="Voltar"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAviso"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Para remover o produto deixe com a quantidade &quot;0&quot;"
+        android:textAlignment="center"
+        android:textColor="#C1FF0000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bt_voltar"
+        app:layout_constraintStart_toStartOf="@+id/bt_voltar"
+        app:layout_constraintTop_toBottomOf="@+id/bt_voltar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

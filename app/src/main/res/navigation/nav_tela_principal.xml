@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_telaprincipal"
+    app:startDestination="@id/navigation_loja">
+
+    <fragment
+        android:id="@+id/navigation_loja"
+        android:name="com.joas.appmusicstore.tela_principal.fragments.LojaFragment"
+        android:label="@string/menu_loja"
+        tools:layout="@layout/fragment_loja"/>
+    <fragment
+        android:id="@+id/navigation_categoria"
+        android:name="com.joas.appmusicstore.tela_principal.fragments.CategoriaFragment"
+        android:label="@string/menu_categoria"
+        tools:layout="@layout/fragment_categoria">
+        <action
+            android:id="@+id/fromCategoriaToClarineteFragment"
+            app:destination="@id/clarineteFragment" />
+        <action
+            android:id="@+id/fromCategoriaToTrompeteFragment"
+            app:destination="@id/trompeteFragment" />
+        <action
+            android:id="@+id/fromCategoriaToPianoFragment"
+            app:destination="@id/pianoFragment" />
+        <action
+            android:id="@+id/fromCategoriaToViolinoFragment"
+            app:destination="@id/violinoFragment" />
+        <action
+            android:id="@+id/fromCategoriaToSaxofoneFragment"
+            app:destination="@id/saxofoneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_carrinho"
+        android:name="com.joas.appmusicstore.tela_principal.fragments.CarrinhoFragment"
+        android:label="@string/menu_carrinho"
+        tools:layout="@layout/fragment_carrinho"/>
+    <fragment
+        android:id="@+id/navigation_conta"
+        android:name="com.joas.appmusicstore.tela_principal.fragments.ContaFragment"
+        android:label="@string/menu_conta"
+        tools:layout="@layout/fragment_conta"/>
+    <activity
+        android:id="@+id/clarineteFragment"
+        android:name="com.joas.appmusicstore.tela_principal.fragments.ClarineteFragment"
+        android:label="fragment_clarinete"
+        tools:layout="@layout/fragment_clarinete" />
+    <activity
+        android:id="@+id/trompeteFragment"
+        android:name="com.joas.appmusicstore.tela_principal.fragments.TrompeteFragment"
+        android:label="fragment_trompete"
+        tools:layout="@layout/fragment_trompete" />
+    <activity
+        android:id="@+id/pianoFragment"
+        android:name="com.joas.appmusicstore.tela_principal.fragments.PianoFragment"
+        android:label="PianoFragment" />
+    <activity
+        android:id="@+id/saxofoneFragment"
+        android:name="com.joas.appmusicstore.tela_principal.fragments.SaxofoneFragment"
+        android:label="SaxofoneFragment" />
+    <activity
+        android:id="@+id/violinoFragment"
+        android:name="com.joas.appmusicstore.tela_principal.fragments.ViolinoFragment"
+        android:label="ViolinoFragment" />
+</navigation>

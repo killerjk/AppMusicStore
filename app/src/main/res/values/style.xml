@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Edit_text">
+        <item name="android:maxLength">30</item>
+        <item name="android:background">@drawable/edit_text</item>
+    </style>
+
+    <style name="Edit_text2">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:background">@drawable/edit_text2</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="ButtonProduto">
+        <item name="android:background">@drawable/button_view</item>
+    </style>
+
+    <style name="Container">
+        <item name="android:background">@drawable/container_perfil</item>
+    </style>
+</resources>

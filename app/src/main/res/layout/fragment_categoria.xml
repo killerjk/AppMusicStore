@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/bt_clarinete"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="90dp"
+        android:backgroundTint="#C3C3C3"
+        android:drawableEnd="@drawable/ic_clarinet"
+        android:gravity="center|start"
+        android:text="Clarinete"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_saxofone"
+        app:layout_constraintEnd_toStartOf="@+id/bt_trompete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_trompete"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#C3C3C3"
+        android:drawableEnd="@drawable/ic_trumpet"
+        android:gravity="center|start"
+        android:text="Trompete"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_violino"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/bt_clarinete"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_violino"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#C3C3C3"
+        android:drawableEnd="@drawable/ic_violino"
+        android:gravity="center|start"
+        android:text="Violino"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/bt_saxofone"
+        app:layout_constraintTop_toBottomOf="@id/bt_trompete" />
+
+    <Button
+        android:id="@+id/bt_saxofone"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="#C3C3C3"
+        android:drawableEnd="@drawable/ic_saxofone"
+        android:gravity="center|start"
+        android:text="Saxofone"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/bt_violino"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_clarinete" />
+
+    <Button
+        android:id="@+id/bt_piano"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#C3C3C3"
+        android:drawableEnd="@drawable/ic_piano"
+        android:gravity="center|start"
+        android:text="Piano"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/bt_violino"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_saxofone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

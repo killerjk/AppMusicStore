@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">App Music Store</string>
+    <string name="menu_loja">Loja</string>
+    <string name="menu_categoria">Categoria</string>
+    <string name="menu_carrinho">Carrinho</string>
+    <string name="menu_conta">Conta</string>
+    <string name="bottom_veja_mais">Veja Mais</string>
+    <string name="clarineteBb">Clarinete Bb Yamaha Ycl 255</string>
+    <string name="clarineteEb">Clarinete Eb Custom Yamaha YCL881</string>
+    <string name="trompeteBb">Trompete YTR 8335 Xeno Si bemol</string>
+    <string name="trompeteC">Trompete de rotor em Dó YTR-948FFMS</string>
+    <string name="saxofoneTenor">Sax Tenor Eagle ST503 Laqueado</string>
+    <string name="saxofoneAlto">Sax Alto Eagle Sa501 Laqueado Sa-501 Saxofone</string>
+    <string name="violinoRolim">Violino Rolim Especial Preto Fosco</string>
+    <string name="violinoLuthier">Violino Profissional Guarnerius Luthier Roykang</string>
+    <string name="pianoTokai">Piano Digital Tokai Cauda Madeirado TP200C</string>
+    <string name="pianoKawai">Piano Kawai GX-7 Semi-Concert Grand Piano</string>
+
+    <string name="clarineteBbcaracterísticas">
+        <b>Afinação:</b> Bb (Sí Bemol)
+        <b>\nApoio de polegar:</b> Ajustável
+        <b>\nBoquilha:</b> CL-4C
+        <b>\nChaves:</b> 17 Keys, 6 Rings
+        <b>\nCor:</b> Preto
+        <b>\nCorpo:</b> Matte Resina ABS
+        <b>\nDimensões da embalagem:</b> 15.000 x 31.000 x 38.000 CM
+        <b>\nDimensões:</b> Cano: 65mm
+        <b>\nEstojo:</b> Sim
+        <b>\nMarca:</b> YAMAHA</string>
+    <string name="title_activity_trompete_c">TrompeteC</string>
+
+    <string name="clarineteEbcaracterísticas">
+        <b>Chave:</b> Eb
+        <b>\nMaterial Corpo:</b> Grenadilla
+        <b>\nBocal:</b> 4C
+        <b>\nEstojo:</b> Incluso
+        <b>\nSistema de dedilhado:</b> Boehm, 17 chaves, 6 anéis
+        <b>\nComprimento do cano:</b> 42mm
+        <b>\nToneholes:</b> Furos de tom cônicos com rebaixo afilado à mão
+        <b>\nDescanso de polegar:</b> Fixo
+        <b>\nMaterial Chaves:</b> Prata niquelada prateada
+        <b>\nFabricado:</b> Japão
+    </string>
+
+    <string name="trompeteBbcaracterísticas">
+        <b>Campana:</b> Metal Amarelo, 123 mm (4-7/8)
+        <b>\nCalibre:</b> ML 11,65 mm (0,459 pol.)
+        <b>\nPeso:</b> Pesado
+        <b>\nBocal:</b> TR16C4
+    </string>
+
+    <string name="trompeteCcaracterísticas">
+        <b>Chave:</b> C
+        <b>\nMaterial da Campana:</b> Uma peça, Metal Amarelo
+        <b>\nDiâmetro da campana:</b> 130mm (5-7/16)
+        <b>\nDimensão do calibre:</b> M 11.24mm (0.442)
+        <b>\nPeso:</b> Pesado
+        <b>\nAcabamento:</b> Prateado
+        <b>\nBocal:</b> TR-16E4
+        <b>\nEstojo:</b> Incluso
+        </string>
+
+    <string name="saxofoneAltocaracterísticas">
+        <b>Acabamento:</b> Laqueado
+        <b>\nApoio de polegar:</b>	Regulável
+        <b>\nCampana:</b> Removível
+        <b>\nParafusos:</b> Aço Inoxidável
+        <b>\nDimensão:</b>	Sib grave articulado e chave de Fá# agudo
+        <b>\nRecursos:</b>	Porta Lira
+        <b>\nEstojo:</b> Extra Luxo
+    </string>
+
+    <string name="saxofoneTenorcaracterísticas">
+        <b>Apoio de Polegar:</b> Regulável
+        <b>\nChaves:</b> Com regulagem de abertura
+        <b>\nParafusos:</b> Aço Inoxidável
+        <b>\nDimensão:</b> Sib Grave articulado e chave de Fá# agudo
+        <b>\nRecursos:</b> Porta Lira
+        <b>\nEstojo (Case):</b> Luxo
+        <b>\nAcabamento:</b> Laqueado
+    </string>
+
+    <string name="violinoRolimcaracterísticas">
+        <b>Tamanho:</b> 4/4
+        <b>\nComprimento:</b> 60cm (medida de ponta a ponta)
+        <b>\nPintura:</b> Cor preta
+        <b>\nTampo:</b> Pinho Araucária
+        <b>\nFundo e lateral:</b> Grevília
+        <b>\nAcessórios e espelho:</b> Ipê
+        <b>\nPeso aproximado:</b> 450g
+        <b>\nOrigem de fabricação:</b> Brasil
+    </string>
+
+    <string name="violinoLuthiercaracterísticas">
+        <b>Violino:</b> 4/4 Profissional
+        <b>\nModelos:</b> Stradivarius Cremona 1715
+        <b>\nInstrumento de Oficina:</b> Luthier
+        <b>\nArtesanal:</b> Feito a mão
+        <b>\nMadeira:</b> Tampo (Abeto)
+        <b>\nMadeiras:</b> Fundo, Laterais Braço e Voluta (Ácero)
+        <b>\nAlma:</b> Abeto
+        <b>\nKit montagem:</b> Ébano Hill Coração
+        <b>\nEspelho:</b> Ébano
+        <b>\nCordas:</b> Opera Perlon
+        <b>\nCavalete:</b> AAA
+        <b>\nPeso aproximadamente:</b> 510/550g
+        <b>\nVerniz:</b> Fosco acabamento envelhecido
+    </string>
+
+    <string name="pianoKawaicaracterísticas">
+        <b>Profundidade:</b> 229 cm
+        <b>\nLargura:</b> 157 cm
+        <b>\nAltura:</b> 102 cm
+        <b>\nNº de Teclas:</b> 88
+        <b>\nNº de Pedais:</b> 3 (abafadores, una corda e sostenuto)
+        <b>\nTábua Harmônica:</b> Spruce maciço
+        <b>\nÁrea da Tábua Harmônica:</b> 1,70 m2
+        <b>\nComprimento do 1º Bordão:</b> 169 cm
+        <b>\nMecanismo:</b> Millenium III™, com peças em ABS-Carbono
+        <b>\nTeclado:</b> Spruce maciço com coberturas em NEOTEX™("marfim" e "ébano" sintéticos)
+        <b>\nEscala:</b> Dual Duplex Scale
+        <b>\nMartelos:</b> Cabeças de mogno, feltro duplo de pura lã resistente à umidade
+        <b>\nTampa do teclado:</b> Com amortecedor hidráulico
+        <b>\nTampa Superior:</b> 3 posições de abertura
+        <b>\nMadeira/Cor:</b> Preto
+        <b>\nAcabamento:</b> Alto Brilho
+        <b>\nBanqueta:</b> Acompanha banqueta regulável
+    </string>
+
+    <string name="pianoTokaicaracterísticas">
+        <b>Teclado:</b> 88 notas | Graded Hammer Action (3 níveis graduais de peso)
+        <b>\nPedais:</b> Sostenuto, Abafador, Sustain
+        <b>\nTimbres:</b> 357
+        <b>\nRitmos:</b> 100 com acompanhamento automático
+        <b>\nDual Voice:</b> Sim (2 simultâneos)
+        <b>\nDual Keyboard:</b> Sim (Teclado dividido para o som escolhido)
+        <b>\nFunção Split:</b> Sim (Teclado divido em dois sons diferentes)
+        <b>\nEfeitos:</b> Chorus e Reverb com ajustes.
+        <b>\nTransposição:</b> Sim
+        <b>\nMetrônomo:</b> Sim
+        <b>\nMP3 Player:</b> Sim
+        <b>\nGravação interna:</b> Sim
+        <b>\nConexão USB/MIDI:</b> Sim
+        <b>\nSaídas:</b> Fones de ouvido P2 e P10, Saídas auxiliares RCA
+        <b>\nPotência:</b> 25w + 25w
+        <b>\nDimensões:</b> C 1370 x A 870 x L 550
+        <b>\nPeso:</b> 75kg
+        <b>\nAlimentação:</b> 110/220v
+    </string>
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppMusicStore"
+        tools:targetApi="31">
+        <activity
+            android:name=".tela_principal.fragments.CarrinhoPedidos"
+            android:exported="false"
+            android:parentActivityName=".tela_principal.TelaPrincipal"/>
+        <activity
+            android:name=".tela_categoria_produto.PianoKawai"
+            android:exported="false"
+            android:parentActivityName=".tela_principal.fragments.PianoFragment" />
+        <activity
+            android:name=".tela_categoria_produto.PianoTokai"
+            android:exported="false"
+            android:parentActivityName=".tela_principal.fragments.PianoFragment" />
+        <activity
+            android:name=".tela_categoria_produto.ViolinoLuthier"
+            android:exported="false"
+            android:parentActivityName=".tela_principal.fragments.ViolinoFragment" />
+        <activity
+            android:name=".tela_categoria_produto.ViolinoRolim"
+            android:exported="false"
+            android:parentActivityName=".tela_principal.fragments.ViolinoFragment" />
+        <activity
+            android:name=".tela_categoria_produto.SaxofoneTenor"
+            android:exported="false"
+            android:parentActivityName=".tela_principal.fragments.SaxofoneFragment" />
+        <activity
+            android:name=".tela_categoria_produto.SaxofoneAlto"
+            android:exported="false"
+            android:parentActivityName=".tela_principal.fragments.SaxofoneFragment" />
+        <activity
+            android:name=".tela_categoria_produto.TrompeteC"
+            android:exported="false"
+            android:parentActivityName=".tela_principal.fragments.TrompeteFragment" />
+        <activity
+            android:name=".tela_categoria_produto.TrompeteBb"
+            android:exported="false"
+            android:parentActivityName=".tela_principal.fragments.TrompeteFragment" />
+        <activity
+            android:name=".tela_categoria_produto.ClarineteEb"
+            android:exported="false"
+            android:parentActivityName=".tela_principal.fragments.ClarineteFragment" />
+        <activity
+            android:name=".tela_categoria_produto.ClarineteBb"
+            android:exported="false"
+            android:parentActivityName=".tela_principal.fragments.ClarineteFragment" />
+        <activity
+            android:name=".tela_principal.fragments.TrompeteFragment"
+            android:exported="false"
+            android:parentActivityName=".tela_principal.TelaPrincipal" />
+        <activity
+            android:name=".tela_principal.fragments.ClarineteFragment"
+            android:exported="false"
+            android:parentActivityName=".tela_principal.TelaPrincipal" />
+        <activity
+            android:name=".tela_principal.fragments.SaxofoneFragment"
+            android:exported="false"
+            android:parentActivityName=".tela_principal.TelaPrincipal" />
+        <activity
+            android:name=".tela_principal.fragments.ViolinoFragment"
+            android:exported="false"
+            android:parentActivityName=".tela_principal.TelaPrincipal" />
+        <activity
+            android:name=".tela_principal.fragments.PianoFragment"
+            android:exported="false"
+            android:parentActivityName=".tela_principal.TelaPrincipal" />
+        <activity
+            android:name=".tela_conta.TelaConta"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".tela_principal.TelaPrincipal" />
+
+        <activity
+            android:name=".tela_principal.TelaPrincipal"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".login_e_cadastro.TelaCadastro"
+            android:exported="false" />
+        <activity
+            android:name=".login_e_cadastro.TelaLogin"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

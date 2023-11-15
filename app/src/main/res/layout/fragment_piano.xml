@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarlayout_pesquisar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/green"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_pesquisar_piano"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/green"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <View
+        android:id="@+id/view_pianoKawai"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_pianoKawai"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/pianodecaldakawai"
+        app:layout_constraintBottom_toBottomOf="@id/view_pianoKawai"
+        app:layout_constraintStart_toStartOf="@+id/view_pianoKawai"
+        app:layout_constraintTop_toTopOf="@id/view_pianoKawai" />
+
+    <TextView
+        android:id="@+id/txt_pianoKawai"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:scrollbars="vertical"
+        android:text="@string/pianoKawai"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/view_pianoKawai"
+        app:layout_constraintEnd_toStartOf="@+id/veja_mais_pianoKawai"
+        app:layout_constraintStart_toEndOf="@id/image_pianoKawai"
+        app:layout_constraintTop_toTopOf="@+id/view_pianoKawai" />
+
+    <Button
+        android:id="@+id/veja_mais_pianoKawai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="Veja \nMais"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="@id/view_pianoKawai"
+        app:layout_constraintEnd_toEndOf="@id/view_pianoKawai"
+        app:layout_constraintTop_toTopOf="@+id/view_pianoKawai" />
+
+    <View
+        android:id="@+id/view_pianoTokai"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_pianoKawai" />
+
+    <ImageView
+        android:id="@+id/image_pianoTokai"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/pianodigitaltokai"
+        app:layout_constraintBottom_toBottomOf="@id/view_pianoTokai"
+        app:layout_constraintStart_toStartOf="@id/view_pianoTokai"
+        app:layout_constraintTop_toTopOf="@id/view_pianoTokai" />
+
+    <TextView
+        android:id="@+id/txt_pianoTokai"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/pianoTokai"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/view_pianoTokai"
+        app:layout_constraintEnd_toStartOf="@+id/veja_mais_pianoTokai"
+        app:layout_constraintStart_toEndOf="@id/image_pianoTokai"
+        app:layout_constraintTop_toTopOf="@id/view_pianoTokai" />
+
+    <Button
+        android:id="@+id/veja_mais_pianoTokai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="Veja \nMais"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/green"
+        app:layout_constraintBottom_toBottomOf="@id/view_pianoTokai"
+        app:layout_constraintEnd_toEndOf="@id/view_pianoTokai"
+        app:layout_constraintTop_toTopOf="@id/view_pianoTokai" />
+</androidx.constraintlayout.widget.ConstraintLayout>
